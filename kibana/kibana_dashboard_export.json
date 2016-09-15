@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "Flow-dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Flow dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"Flow-top-country-table\",\"panelIndex\":1,\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"Flow-top-ASN\",\"panelIndex\":2,\"row\":1,\"size_x\":9,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Flow-source-ports\",\"panelIndex\":3,\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Flow-tcp-flags\",\"panelIndex\":4,\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"vis\":{\"colors\":{\"JP\":\"#BF1B00\",\"US\":\"#052B51\"}}},\"P-6\":{\"vis\":{\"colors\":{\"JP\":\"#BF1B00\",\"US\":\"#052B51\"},\"legendOpen\":true}},\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "2016-08-26T06:00:00.000Z",
+      "timeFrom": "2016-08-26T05:00:00.000Z",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"-src_as:0\"}}}]}"
+      }
+    }
+  }
+]

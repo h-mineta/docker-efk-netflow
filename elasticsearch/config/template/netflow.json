@@ -1,0 +1,90 @@
+{
+  "template" : "netflow-*",
+    "mappings" : {
+      "netflow" : {
+        "properties" : {
+          "@timestamp" : {
+            "type" : "date"
+          },
+          "ipv4_geoip_city" : {
+            "type" : "keyword"
+          },
+          "ipv4_geoip_country" : {
+            "type" : "keyword"
+          },
+          "ipv4_geoip_pin" : {
+            "type" : "geo_point",
+            "ignore_malformed": true
+          },
+          "ipv6_geoip_city" : {
+            "type" : "keyword"
+          },
+          "ipv6_geoip_country" : {
+            "type" : "keyword"
+          },
+
+          "host" : {
+            "type" : "keyword"
+          },
+          "bgp_ipv4_next_hop" : {
+            "type" : "ip",
+            "index" : false
+          },
+          "direction" : {
+            "type" : "long",
+            "index" : false
+          },
+          "ipv4_src_addr" : {
+            "type" : "ip"
+          },
+          "ipv4_dst_addr" : {
+            "type" : "ip"
+          },
+          "src_mask" : {
+            "type" : "integer",
+            "index" : false
+          },
+          "dst_mask" : {
+            "type" : "integer",
+            "index" : false
+          },
+          "ipv4_next_hop" : {
+            "type" : "ip",
+            "index" : false
+          },
+
+          "bgp_ipv6_next_hop" : {
+            "type" : "keyword",
+            "index" : false
+          },
+          "ipv6_src_addr" : {
+            "type" : "keyword"
+          },
+          "ipv6_dst_addr" : {
+            "type" : "keyword"
+          },
+          "ipv6_src_mask" : {
+            "type" : "integer",
+            "index" : false
+          },
+          "ipv6_dst_mask" : {
+            "type" : "integer",
+            "index" : false
+          },
+          "ipv6_next_hop" : {
+            "type" : "keyword",
+            "index" : false
+          },
+          "input_snmp" : {
+            "type" : "long",
+            "index" : false
+          },
+          "output_snmp" : {
+            "type" : "long",
+            "index" : false
+          }
+        }
+      }
+    }
+  }
+}
